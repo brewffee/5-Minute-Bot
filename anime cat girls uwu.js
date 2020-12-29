@@ -10,6 +10,6 @@ d.on('ready',()=> console.log('ready'))
         const a=m.content.slice(cf.p.length).trim().split(/ +/g),
         cm=d.cs.get(a.shift().toLowerCase());
         if(m.author.bot||!m.content.indexOf(cf.p)===0||!cm)return;
-        cm.r(m, args);
+        cm.r(m, a);
     });
 d.login(cf.t);
